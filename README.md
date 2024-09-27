@@ -20,7 +20,7 @@ Este proyecto contiene una serie de alias globales útiles para la línea de com
 ```
 
 ## Cómo Usar
-Puede descargar directamente el archivo .global_aliases [`.global_aliases` file](https://raw.githubusercontent.com/ecaminero/global-aliases/main/.global_aliases) para bash/zsh guardarlo en su directorio $HOME.
+Puede descargar directamente el archivo [`.global_aliases`](https://raw.githubusercontent.com/ecaminero/global-aliases/main/.global_aliases) para bash/zsh guardarlo en su directorio $HOME.
 
 #### Bash/Zsh
 ```sh
