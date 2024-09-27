@@ -1,8 +1,93 @@
-## Alias Disponibles
 
-
-# Listar solo carpetas ocultas
-alias lsh='find . -maxdepth 1 -type d -name ".*"'
- 
 # Mostrar todas las carpetas en tipo arbol
 alias tree='find . | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"'
+
+# Búsqueda y manipulación de archivos
+alias findpy='find . -name "*.py" -type f'
+alias grepf='grep -r'
+alias seded='sed -i'
+
+# Gestión de procesos
+alias pspy='ps aux | grep python'
+alias kp='kill -9'
+alias bgrun='nohup'
+
+# Monitoreo del sistema
+alias mem='free -m'
+alias disk='df -h'
+
+# Redes
+alias ports='netstat -tuln'
+alias headers='curl -I'
+
+# Manejo de archivos y directorios
+alias compress='tar -czvf'
+alias extract='tar -xzvf'
+alias unz='unzip'
+alias sync='rsync -avz'
+
+# Control de versiones (Git)
+alias gl='git log --oneline --graph'
+alias gd='git diff'
+alias gb='git branch -a'
+
+# Manipulación de texto
+alias countuniq='sort | uniq -c'
+
+# Scripting y debugging
+alias debug='set -x'
+
+# Manejo de permisos
+alias chx='chmod +x'
+alias chownr='chown -R'
+
+# Gestión de usuarios
+alias adduser='sudo useradd -m'
+alias passwd='sudo passwd'
+
+# Información del sistema
+alias sysinfo='uname -a'
+alias cpuinfo='lscpu'
+
+# Trabajar con datos
+alias prettyjson='jq "."'
+alias prettyxml='xmllint --format'
+
+# Monitoreo de logs
+alias tailog='tail -f'
+alias syslogs='journalctl -f'
+
+# Gestión de servicios
+alias srvstatus='systemctl status'
+alias srvrestart='sudo service'
+
+# Navegación
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Listado de archivos
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsh='find . -maxdepth 1 -type d -name ".*"'  # Listar solo carpetas ocultas
+ 
+
+# Docker
+alias dps='docker ps'
+alias dimg='docker images'
+alias dex='docker exec -it'
+
+
+# Búsqueda rápida
+alias ffile='find . -name'
+alias fdir='find . -type d -name'
+
+# Historial
+alias h='history'
+alias hg='history | grep'
+
+# Misceláneos
+alias weather='curl wttr.in'
+alias speed='speedtest-cli'
+alias publicip='curl ifconfig.me'
