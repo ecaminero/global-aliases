@@ -1,0 +1,8 @@
+## Alias Disponibles
+
+
+# Listar solo carpetas ocultas
+alias lsh='find . -maxdepth 1 -type d -name ".*"'
+ 
+# Mostrar todas las carpetas en tipo arbol
+alias tree='find . | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"'
